@@ -116,6 +116,7 @@ build_fun(sc_list = k.assign, do_val = 0.10, meth = 'fm', atype = 'mice', errtyp
 build_fun(sc_list = k.assign, do_val = 0.05, meth = 'fm', atype = 'mice', errtype = 'H1',pathout = 'sim_pgms/fm/do5')
 
 
+
 #########################################
 ## WN - H0 MICE                        ##
 #########################################
