@@ -33,7 +33,7 @@ system.time({
      #generate full data with desired correlation structure
      dt0 <- sim_cont(p_C = ss$p_C, p_T = ss$p_C - ss$M2, n_arm = ss$n.arm, 
                      mu1 = 4, mu2 = 100, sigma1 = 1, sigma2 = 20, r12 = -0.3, b1 = 0.1, b2 = -0.01)
-     ci.full <- dt0%>%fm_ci(ss$M2,'y')
+     ci.full <- dt0%>%wald_ci(ss$M2,'y')
      
      #define missingness parameters and do rates
      m.param <- mpars(do = do_val, atype = anal_type) 
@@ -63,8 +63,6 @@ system.time({
    })
 })
 
-saveRDS(x1, sprintf("results/cont2xH1_%s_%s_sc%d_do%d_param%d.rds", 
-                    method, anal_type, scenario, round(100*do_val,0), param))
 
 
 

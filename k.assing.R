@@ -1,7 +1,6 @@
 # Program that specifies values mu_k for missingness models
 k.assign <- 
-  dplyr::
-  tibble(scenario.id = seq(1,30,1),
+  tibble::tibble(scenario.id = seq(1,30,1),
          mu.k1 = c(0.69, 0.70, 0.72, 0.75, 0.78, 0.82, 0.85, 0.95, 0.65, 0.68, 
                    0.70, 0.72, 0.75, 0.78, 0.82, 0.62, 0.65, 0.68, 0.70, 0.70,
                    0.75, 0.55, 0.60, 0.60, 0.60, 0.65, 0.55, 0.55, 0.58, 0.58),
